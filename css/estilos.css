@@ -1,0 +1,179 @@
+/* HEADERs */
+
+.contenedor-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(255, 245, 245), bisque);
+}
+
+/* INDEX */
+
+
+.flex-modelos{
+    border: 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 450px;
+    margin: 0 auto;
+
+
+
+}
+
+.caja-modelo{
+    padding: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+
+.flex-footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.caja-footer{
+    color: white;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.caja-footer h5{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+.icono{
+    font-size: 2em;
+    color: white;
+    margin: 3px;
+    margin-left: 40px;
+}
+
+/* CONTACTO */
+
+.icono2{
+    font-size: 2em;
+    color: black;
+}
+
+.contacto-redes a{
+    color: black;
+    text-decoration: none;
+}
+
+.contacto-redes a:hover, .icono2:hover, .email:hover{
+    color: red;
+}
+
+iframe{
+    height: 50vh;
+    width: 70vh;
+}
+
+/* PRODUCTOS */
+
+.margen{
+    margin: 25px;
+}
+
+.negro{
+    background-color: black;
+    border: black;
+    color: white;
+}
+
+.negro:hover{
+    background-color: white;
+    color: black;
+    border: black;
+}
+
+/* PREGUNTAS FRECUENTES */
+.contenedor-preguntas{
+    height: 100vh;
+    margin-top: 10vh;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+@media screen and (max-width: 992px) {
+    .column {
+    width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .contenedor-preguntas{
+        height: 150vh;
+    }
+    .column {
+    width: 100%;
+    }
+    }
+
+/* MEDIAQUERYS */
+
+@media (max-width:767px){
+    .flex-modelos{
+        height: 1230px;
+    }
+    
+}
+
+/* MEDIAQUERYS 576PX */
+
+@media (max-width:576px){
+
+    .contenedor-logo{
+        width: 1px;
+    }
+    #logo{
+        width: 300px;
+    }
+    .flex-modelos {
+        height: 1200px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .caja-modelo{
+        padding: 1px;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .flex-footer{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    iframe{
+        height: 30vh;
+        width: 40vh;
+    }
+}
